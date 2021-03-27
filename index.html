@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main1.css">
+    <!-- <link rel="stylesheet" href="./slider.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'></link>
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div> -->
+        <!-- 1 -->
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="hearder__navbar-logo">
+                        <img class="hearder__navbar-logo-img"
+                            src="https://www.radiustheme.com/demo/wordpress/themes/metro/wp-content/themes/metro/assets/img/logo-dark.png" />
+                    </div>
+                    <div class="hearder__navbar-nav">
+                        <ul class="hearder__navbar-list">
+                            <li class="hearder__navbar-item">
+                                <a href="" class="abc">Home<i class='bx bx-chevron-down dropdown__icon'></i></a>
+                            </li>
+                            <li class="hearder__navbar-item">
+                                <a href=""  class="abc">Shop<i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                <ul class="hearder__navbar-item-menu1">
+                                    <li class="hearder__navbar-item-menu-item">
+                                        <ul class="hearder__navbar-item-submenu" >
+                                            <a href="" >Shop Features</a>
+                                            <hr>
+                                            <li><a href="">Gird View</a></li>
+                                            <li><a href="">List View</a></li>
+                                            <li><a href="">Sidebar Right</a></li>
+                                            <li><a href="">Sidebar Left</a></li>
+                                            <li><a href="">Full Width</a></li>
+                                            <li><a href="">Load More</a></li>
+                                            <li><a href="">Infinity scoll</a></li>
+                                            <li><a href="">Top Widget Ajax <span class="submenu-hot">hot</span></a></li>
+                                            <li><a href="">Sidebar Ajax Filter <span class="submenu-new">new</span></a></li>
+                                        </ul>
+                                        <ul class="hearder__navbar-item-submenu" >
+                                            <a href="">Shop Styles</a>
+                                            <hr>
+                                            <li><a href="">Style 1</a></li>
+                                            <li><a href="">Style 2</a></li>
+                                            <li><a href="">Style 3</a></li>
+                                            <li><a href="">Style 4</a></li>
+                                            <li><a href="">Style 5</a></li>
+                                            <li><a href="">Style 6</a></li>
+                                            <li><a href="">Style 7</a></li>
+                                            <li><a href="">Style 8</a></li>
+                                            <li><a href="">Style 9</a></li>
+                                        </ul>
+                                        <ul class="hearder__navbar-item-submenu" >
+                                            <a href="">Product Features</a>
+                                            <hr>
+                                            <li><a href="">Single Product 1</a></li>
+                                            <li><a href="">Single Product 2</a></li>
+                                            <li><a href="">Single Product 3</a></li>
+                                            <li><a href="">Variable Product</a></li>
+                                            <li><a href="">Grouped Product</a></li>
+                                            <li><a href="">Left Thumbnail</a></li>
+                                            <li><a href="">Right Thumbnail</a></li>
+                                            <li><a href="">Slide/Alternate<span class="submenu-new">new</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hearder__navbar-item">
+                                <a href=""  class="abc">Pages<i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                <ul class="hearder__navbar-item-menu">
+                                    <li class="hearder__navbar-item-menu-item">
+                                        <ul class="hearder__navbar-item-submenu" >
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">FAQ</a></li>
+                                            <li><a href="">Error 404</a></li>
+                                            <li><a href="">Search Result</a></li>
+                                        </ul>
+                                        <ul class="hearder__navbar-item-submenu">
+                                            <li><a href="">My Account</a></li>
+                                            <li><a href="">FAQ</a></li>
+                                            <li><a href="">Error 404</a></li>
+                                            <li><a href="">Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hearder__navbar-item">
+                                <a href=""  class="abc">Elements<i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                <ul class="hearder__navbar-item-menu">
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li class="hearder__navbar-item">
+                                <a href=""  class="abc">Blogs<i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                <ul class="hearder__navbar-item-menu">
+                                    <li class="hearder__navbar-item-menu-item">
+                                        <ul class="hearder__navbar-item-submenu" >
+                                            <li><a href="">Blog - Layout 1</a></li>
+                                            <li><a href="">Blog - Layout 2</a></li>
+                                            <li><a href="">Blog - Layout 3</a></li>
+                                            <li><a href="">Single Post</a></li>
+                                        </ul>
+                                        <ul class="hearder__navbar-item-submenu">
+                                            <li><a href="">Blog - Full Width</a></li>
+                                            <li><a href="">Blog - Left Sidebar</a></li>
+                                            <li><a href="">Post - Full Width</a></li>
+                                            <li><a href="">Post - Left Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hearder__navbar-item">
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="hearder__navbar-list-hai">
+                            <li class="hearder__navbar-item-list"><i
+                                    class="hearder__navbar-item-icon fas fa-search"></i>
+                            </li>
+                            <li class="hearder__navbar-item-list"><i class="hearder__navbar-item-icon far fa-user"></i>
+                            </li>
+                            <li class="hearder__navbar-item-list"><i class="hearder__navbar-item-icon far fa-heart"></i>
+                            </li>
+                            <li class="hearder__navbar-item-list"><i
+                                    class="hearder__navbar-item-icon fas fa-cart-plus"></i>
+                            </li>
+                            <li class="hearder__navbar-item-list"><i
+                                    class="hearder__navbar-item-icon fas fa-dollar-sign">0.00</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-with-search">
+                    <div class="meny">
+                        <div class="button">
+                            <i class="fas fa-align-left"></i>
+                            <h8>CATEGORIES</h8>
+                        </div>
+                        <ul class="meny-contai">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Electornics</a></li>
+                            <li><a href="">Jewellery</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Kid's Wear</a></li>
+                            <li><a href="">Sports</a></li>
+                            <li><a href="">Toys</a></li>
+                            <li><a href="">Gift Corners</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__search">
+                        <input placeholder="Search Products here" class="header__search-input" />
+                        <div class="header__search-select">
+                            <span class="header__search-lable">
+                                All Categories
+                            </span>
+                            <i class="header__search-icon fas fa-caret-down"></i>
+                        </div>
+                        <div class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 2 -->
+        <div class="broly">
+            <div class="slideshow">
+                <div class="slideshow-item">
+                    <img src="./img/6.png" alt="">
+                    <div class="slideshow-item-text">
+                        <h6>SOUNDBOX</h6>
+                        <h5>Đồng hồ nam Seiko</h5>
+                        <p>Sử dụng bộ máy Cal. 4R38 độc quyền của Seiko với 24 chân kính vô cùng chính xác và trữ cót
+                            được tới 40h</p>
+                    </div>
+                </div>
+
+                <div class="slideshow-item">
+                    <img src="./img/3.png" alt="">
+                    <div class="slideshow-item-text">
+                        <h6>SOUNDBOX</h6>
+                        <h5>Tai Nghe Bluetooth </h5>
+                        <p>Trang bị công nghệ âm thanh chất lượng cao,thiết kế 2 loa độc lập đem đến trải nghiệm âm
+                            thanh chân thực và trong trẻo với bass mạnh và chắc</p>
+                    </div>
+                </div>
+
+                <div class="slideshow-item">
+                    <img src="./img/4.png" alt="">
+                    <div class="slideshow-item-text">
+                        <h6>SOUNDBOX</h6>
+                        <h5>Loa Bluetooth</h5>
+                        <p>Extra Bass Sony SRS-XB43 </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="container__navbar">
+            <div class="container__navbar-form">
+                <div class="container__navbar-product">
+                    <div class="container__navbar-product-content">
+                        <h1>LED HANGER LIGHT</h1>
+                        <p class="container__navbar-product-content-subtitle">Trending 2021</p>
+                    </div>
+                    <div class="container__navbar-product-img">
+                        <img class="container__navbar-product-img-one" src="./img/7.png">
+                    </div>
+                </div>
+                <div class="container__navbar-product-two">
+                    <div class="container__navbar-product-image">
+                        <img class="container__navbar-product-img-two" src="./img/8.png">
+                    </div>
+
+                    <div class="container__navbar-product-content-one">
+                        <h1>HEADPHONE</h1>
+                        <p class="container__navbar-product-content-subtitle-one">Collection 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <footer class="footer">
+            <div class="footer__products">
+                <div class="footer__products-title">
+                    <h1>Featured Products</h1>
+                </div>
+                <div class="footer__products-items">
+                    <div class="footer__products-items-one">
+                        <div class="footer__product-column-one">
+                            <div class="footer__product-column-one-card">
+                                <div class="one-card-img">
+                                    <img src="img/13.jpg">
+                                </div>
+                                <div class="card-img-title">
+                                    <h2>Game Controller</h2>
+                                    <div class="card-img-price">
+                                        <span class="card-img-price-old">
+                                            <i class="fas fa-dollar-sign">390.000</i>
+                                        </span>
+                                        <span class="card-img-price-new">
+                                            <i class="fas fa-dollar-sign">375.000</i>
+                                        </span>
+                                    </div>
+                                    <a href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__product-column-two">
+                            <div class="footer__product-column-two-card">
+                                <div class="card-img">
+                                    <img src="img/9.jpg">
+                                </div>
+                                <div class="card-img-title">
+                                    <h2>Keyboard</h2>
+                                    <div class="card-img-price">
+                                        <span class="card-img-price-old">
+                                            <i class="fas fa-dollar-sign">390.000</i>
+                                        </span>
+                                        <span class="card-img-price-new">
+                                            <i class="fas fa-dollar-sign">375.000</i>
+                                        </span>
+                                    </div>
+                                    <a href="">BUY FROM AMAZON</a>
+                                </div>
+                            </div>
+                            <div class="footer__product-column-two-card">
+                                <div class="card-img">
+                                    <img src="img/10.jpg">
+                                </div>
+                                <div class="card-img-title">
+                                    <h2>Speaker</h2>
+                                    <div class="card-img-price">
+                                        <span class="card-img-price-new">
+                                            <i class="fas fa-dollar-sign">80.000</i>
+                                        </span>
+                                    </div>
+                                    <a href="">BUY FROM AMAZON</a>
+                                </div>
+                            </div>
+                            <div class="footer__product-column-two-card">
+                                <div class="card-img">
+                                    <img src="img/11.jpg">
+                                </div>
+                                <div class="card-img-title">
+                                    <h2>Headphone</h2>
+                                    <div class="card-img-price">
+                                        <span class="card-img-price-new">
+                                            <i class="fas fa-dollar-sign">35.000</i>
+                                        </span>
+                                    </div>
+                                    <a href="">BUY FROM AMAZON</a>
+                                </div>
+
+                            </div>
+                            <div class="footer__product-column-two-card">
+                                <div class="card-img">
+                                    <img src="img/12.jpg">
+                                </div>
+                                <div class="card-img-title">
+                                    <h2>Ultra Lense</h2>
+                                    <div class="card-img-price">
+                                        <span class="card-img-price-new">
+                                            <i class="fas fa-dollar-sign">630.000</i>
+                                        </span>
+                                    </div>
+                                    <a href="">BUY FROM AMAZON</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__products-items-two">
+                        <div class="footer__product-items-two-card">
+                            <div class="card-img">
+                                <img src="img/14.jpg">
+                            </div>
+                            <div class="card-img-title">
+                                <h2>Bluetooth</h2>
+                                <div class="card-img-price">
+                                    <span class="card-img-price-new">
+                                        <i class="fas fa-dollar-sign">90.000</i>
+                                    </span>
+                                </div>
+                                <a href="">BUY FROM AMAZON</a>
+                            </div>
+                        </div>
+                        <div class="footer__product-items-two-card">
+                            <div class="card-img">
+                                <img src="img/15.jpg">
+                            </div>
+                            <div class="card-img-title">
+                                <h2>Gadgets Collection</h2>
+                                <div class="card-img-price">
+                                    <span class="card-img-price-new">
+                                        <i class="fas fa-dollar-sign">370.000</i>
+                                    </span>
+                                </div>
+                                <a href="">BUY FROM AMAZON</a>
+                            </div>
+                        </div>
+                        <div class="footer__product-items-two-card">
+                            <div class="card-img">
+                                <img src="img/16.jpg">
+                            </div>
+                            <div class="card-img-title">
+                                <h2>Hobbyist Watch</h2>
+                                <div class="card-img-price">
+                                    <span class="card-img-price-new">
+                                        <i class="fas fa-dollar-sign">160.000</i>
+                                    </span>
+                                </div>
+                                <a href="">BUY FROM AMAZON</a>
+                            </div>
+                        </div>
+                        <div class="footer__product-items-two-card">
+                            <div class="card-img">
+                                <img src="img/17.jpg">
+                            </div>
+                            <div class="card-img-title">
+                                <h2>Graphics Card</h2>
+                                <div class="card-img-price">
+                                    <span class="card-img-price-new">
+                                        <i class="fas fa-dollar-sign">180.000</i>
+                                    </span>
+                                </div>
+                                <a href="">BUY FROM AMAZON</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 5 -->
+        <div class="signup">
+            <div class="signup__content">
+                <h2>Signup Newsletter!</h2>
+                <h5>It only takes a second to be the first to find out about our latest news</h5>
+                <div class="signup__content-input">
+                    <input placeholder="Your email address">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="product__slide">
+            <div class="product__slide-title">
+                <h2>Inspirational Posts</h2>
+            </div>
+            <div class="product__slide-list">
+                <div class="product__slide-list-img">
+                    <div class="product__slide-list-img-anh">
+                        <img src="img/18.jpg">
+                        <div class="product__slide-list-elip">
+                            <div class="elip1">23</div>
+                            <div class="elip2">Dec</div>
+                        </div>
+                    </div>
+                    <div class="product__slide-list-infor">
+                        <div class="product__slide-list-infor-ab">
+                            <a href="">Fashion</a>, <a href="">Modern</a>
+                        </div>
+                        <h2><a href="">The City of London Wants To Have</a></h2>
+                    </div>
+                    <div class="product__slide-list-elip">
+                        <div class="elip1">23</div>
+                        <div class="elip2">Dec</div>
+                    </div>
+                </div>
+                <div class="product__slide-list-img">
+                    <div class="product__slide-list-img-anh">
+                        <img src="img/19.jpg">
+                    </div>
+                    <div class="product__slide-list-infor">
+                        <div class="product__slide-list-infor-ab">
+                            <a href="">Fashion</a>, <a href="">Modern</a>
+                        </div>
+                        <h2><a href="">The City of London Wants To Have</a></h2>
+                    </div>
+                    <div class="product__slide-list-elip">
+                        <div class="elip1">23</div>
+                        <div class="elip2">Dec</div>
+                    </div>
+                </div>
+                <div class="product__slide-list-img">
+                    <div class="product__slide-list-img-anh">
+                        <img src="img/20.jpg">
+                    </div>
+                    <div class="product__slide-list-infor">
+                        <div class="product__slide-list-infor-ab">
+                            <a href="">Finger Ring</a>, <a href=""> Jewellery</a>
+                        </div>
+                        <h2><a href="">The City of London Wants To Have Brexit Cake available</a></h2>
+                    </div>
+                    <div class="product__slide-list-elip">
+                        <div class="elip1">23</div>
+                        <div class="elip2">Dec</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 7 -->
+        <div class="photo__wrap">
+            <div class="photo__wrap-list-img">
+                <img src="img/21.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/22.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/23.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/24.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/25.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/26.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/27.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="photo__wrap-list-img">
+                <img src="img/28.jpg">
+                <div class="photo__wrap-list-image-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="photo__wrap-button">
+                <i class="fab fa-instagram"> </i>
+                <p>Instagram</p>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="information__contact">
+            <div class="information__contact-categori">
+                <div class="information__contact-categori-address">
+                    <div class="information__contact-categori-address-logo">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    <ul>
+                        <li class="information__contact-categori-tin">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>59 Street, Newyork City, Rose Town,05 Rive House</span>
+                        </li>
+                        <li class="information__contact-categori-tin">
+                            <i class="fas fa-phone-volume"></i>
+                            <a href="">
+                                +123 456 7890</a>
+                        </li>
+                        <li class="information__contact-categori-tin">
+                            <i class="far fa-envelope"></i>
+                            <a href="">
+                                info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="information__contact-categori-address">
+                    <h3>Information</h3>
+                    <div class="information__contact-categori-address-tt">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Latest Post</a></li>
+                            <li><a href="">Selling Tips</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="information__contact-categori-address">
+                    <h3>My Account</h3>
+                    <div class="information__contact-categori-address-tt">
+                        <ul>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Login/Register</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Order History</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="information__contact-categori-address">
+                    <h3>Help & Support</h3>
+                    <div class="information__contact-categori-address-tt">
+                        <ul>
+                            <li><a href="">How To Shop</a></li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Delivery</a></li>
+                            <li><a href="">CPrivacy & Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="information__contact-hr">
+            </div>
+            <div class="information__contact-channels">
+                <div class="information__contact-channels-text">
+                    © Copyright Metro 2020. Designed and Developed by
+                    <a href="">RadiusTheme </a>
+                </div>
+                <div class="information__contact-channels-icon">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href=""><i class="fas fa-rss"></i></a></li>
+
+                    </ul>
+                </div>
+                <ul class="information__contact-channels-paypanment">
+                    <li>
+                        <img src="img/30.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/31.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/32.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/33.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.button').click(function(){
+                // $(this).toggleClass('expand');
+                // $('.fas').toggleClass('expand');
+                if($(this).hasClass('expand')){
+                    $('.meny-contai').slideUp(function(){
+                        $('.button').removeClass('expand');
+                        $('.fas').removeClass('expand');
+                    });
+                }else{
+                    $(this).addClass('expand');
+                    setTimeout(function(){
+                        $('.fas').addClass('expand')
+                        $('.meny-contai').stop().slideDown();
+                    },200);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
